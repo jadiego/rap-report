@@ -1,0 +1,74 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+p {
+	font-size: 15px !important;
+}
+
+h1 {
+	margin: 0px;
+	height: 120px;
+}
+
+small {
+	position: relative;
+	bottom: 18px;
+}
+
+img {
+	margin: 0px auto;
+}
+
+legend {
+	position: relative;
+	top: 10px;
+}
+
+div#rating {
+	padding-bottom: 5px;
+}
+
+.num {
+	color: #777;
+	font-size: 11px;
+	padding: 0px 5px;
+}
+
+.media {
+	padding: 10px;
+	background-color: #eee;
+	border-radius: 5px;
+}
+
+.delete {
+	color: #777;
+	font-size: 12px;
+	display: inline-block;
+	padding-right: 15px;
+}
+
+.manipulation {
+	display: inline-block;
+}
+
+#header {
+	position: relative;
+	top: 30px;
+	border-bottom: solid;
+}
+
+#newreview {
+	background-color: #eee;
+	position: relative;
+	top: 20px;
+	border-radius: 5px;
+}
+
+#pastreviewscontainer {
+	position: relative;
+	top: 30px;
+}
+
+#submitreviewbutton {
+	position: relative;
+	bottom: 10px;
+}

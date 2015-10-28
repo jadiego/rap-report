@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Rap Report</title>
+
+		<link rel="shortcut icon" href="img/cassette.png">
+
+		<meta name="author" content="John Diego">
+		<meta name="description" content="Reviews and thoughts of rap music.">
+
+		<!-- Bootstrap, jQuery, jQuery Raty FA -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.raty-fa.js"></script>
+
+		<!-- Parse -->
+		<script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+		<script type="text/javascript" src="js/rapreport.js"></script>
+
+		<!-- Custom files-->
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+					<a class="navbar-brand text-center" href="#">Rap Report</a>
+			</div>
+		</nav>
+
+		<!-- Album information header -->
+		<div class="jumbotron" id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-5">
+						<div><img class="img-responsive img-rounded" src="img/coverart.jpg"></div>
+						<div id="overallrating"></div>
+					</div>
+					<div class="col-xs-12 col-sm-7">
+						<div>
+							<h1>Big Sean<br><small>Detroit</small></h1>
+						</div>
+						<div>
+							<p>Check out Detroit, a new mixtape from Big Sean that saw the light of day on Wednesday, September 5th, 2012. Featuring Chris Brown, Tyga, Juicy J, King Chip, French Montana, and Royce Da 5'9 with Kendrick Lamar on the same joint, plus more.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Write review form-->
+		<div class="container" id="newreview">
+			<form class="form-horizontal">
+				<legend>Write a review!</legend>
+				<div id="rating"></div>
+				<div class="form-group container">
+					<input id="title" class="form-control" placeholder="Short Description.">
+				</div>
+				<div class="form-group container">
+					<textarea id="body" class="form-control" placeholder="Additional comments."></textarea>
+				</div>
+  				<button id="submitreviewbutton" type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+
+		<!-- Reviews -->
+		<div class="container-fluid" id="pastreviewscontainer">
+			<h3>Reviews</h3>
+			<div id="pastreviews">
+			</div>
+		</div>
+	</body>
+</html>
